@@ -104,6 +104,7 @@ export default class InternalModelMap {
     for (let i = 0; i < models.length; i++) {
       let model = models[i];
       model.unloadRecord();
+      model.destroy();
     }
 
     this._metadata = null;
